@@ -89,9 +89,7 @@
                 /* Output images to page */
                 $image_files = get_files($images_dir);
                 if(count($image_files)) {
-                  $index = 0;
-                  foreach($image_files as $index=>$file) {
-                    $index++;
+                  foreach($image_files as $file) {
                     $image = $images_dir.$file;
 
                     echo "<div><img src='" . $image . "' /></div>";
